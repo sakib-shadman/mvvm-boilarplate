@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:id="@+id/itemCardView">
+    <LinearLayout
+        android:id="@+id/leaveApplicationEmployeeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginStart="0dp"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imgLeftBar"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-3dp"
+            android:layout_weight=".1"
+            android:adjustViewBounds="true"
+            android:background="@color/colorAccent"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:layout_weight=".6"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp">
+            <TextView
+                android:id="@+id/txtDayCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorGray"
+                android:text="0"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txtDayCountDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorGray"
+                android:text="N/A"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/textColorGray"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp">
+                  <!--  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leave"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        />-->
+
+                    <TextView
+                        android:id="@+id/txtLeavePurpose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:text="N/A"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txtLeave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/requisition_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="N/A"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp">
+
+
+
+                        <TextView
+                            android:id="@+id/txtApplyDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:textColor="@color/requisition_text"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:text="N/A"
+                            />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp">
+                        <TextView
+                            android:id="@+id/txtStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:textColor="@color/requisition_text"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:text="N/A"
+                            android:layout_marginRight="5dp"
+                            />
+                        <ImageView
+                            android:id="@+id/statusImage"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            />
+                    </LinearLayout>
+                    </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/view_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="-3dp"
+            android:layout_weight=".2"
+            android:adjustViewBounds="true"
+            android:src="@drawable/right_arrow_round"
+            android:scaleType="fitEnd"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/leaveApplicationAdminView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/imgLeftBarAdmin"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-3dp"
+            android:layout_weight=".1"
+            android:adjustViewBounds="true"
+            android:background="@color/colorAccent"
+            android:scaleType="fitStart" />
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|top"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3.1"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:id="@+id/txtEmployeeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="N/A"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txtDayCountAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 day"
+                        android:textColor="@color/textColorGray"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="3dp">
+
+
+                    <TextView
+                        android:id="@+id/txtLeaveAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="0dp"
+                        android:text="N/A"
+                        android:textColor="@color/textColorGray"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txtLeavePurposeAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="N/A"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="0dp">
+
+
+                    <TextView
+                        android:id="@+id/txtApplyDateAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="N/A"
+                        android:textColor="@color/requisition_text"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtStatusAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="0dp"
+                            android:text="N/A"
+                            android:textColor="@color/requisition_text"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/statusImageAdmin"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/view_edit_btn_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="-3dp"
+            android:layout_weight=".2"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/right_arrow_round" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
